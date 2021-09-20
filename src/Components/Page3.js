@@ -57,7 +57,7 @@ function Page3() {
             <div className="container d-flex justify-content-center align-itmes-center">
                 <Link to="/page2"> <button type="button" className=" btn btn-primary more1 ">Page 2</button></Link>
                 <Link to="/"> <button type="button" className=" btn btn-primary more1 ">Home</button></Link>
-                <Link to="/page4"> <button type="button" className=" btn btn-primary more1 ">Page 4</button></Link>
+                
 </div>
 
 
