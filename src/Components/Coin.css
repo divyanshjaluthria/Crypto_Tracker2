@@ -1,0 +1,55 @@
+.coin-row{
+    height: 80px;
+    width: 80vw;
+    border-bottom: 1px solid #d7d7d7;
+}
+
+.coin-logo{
+    height: 8vh;
+    width: 8vh;
+    margin-right: 10px;
+}
+
+.coin{
+    padding-right: 24px;
+    min-width: 300px;
+}
+
+.coin h1{
+    font-size: 16px;
+    width: 150px;
+    
+}
+
+.coin-symbol{
+    text-transform: uppercase;
+}
+
+.coin-rank{
+    margin-right: 20px;
+}
+
+.coin-price{
+    margin-left: 0;
+    width: 110px;
+}
+.coin-data{
+    justify-content: space-between;
+    width: 100%
+}
+
+.coin-volume{
+    width: 12.5vw;
+}
+
+.coin-market-cap{
+    width: 10vw;
+}
+
+.coin-container{
+    margin-top: 2vh;
+}
+
+body{
+    background-color: #f2fdff;
+}

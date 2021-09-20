@@ -1,0 +1,41 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  overflow-x: hidden;
+ }
+ 
+ body{
+     font-family: 'Montserrat', sans-serif
+ }
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');  
+ 
+ 
+ /* width */
+ ::-webkit-scrollbar {
+     width: 10px;
+   }
+   
+   /* Track */
+   ::-webkit-scrollbar-track {
+     background: white;
+   }
+   
+   /* Handle */
+   ::-webkit-scrollbar-thumb {
+     background: #001f63;
+     border-radius: 50px;
+   }
+   
+   /* Handle on hover */
+   ::-webkit-scrollbar-thumb:hover {
+     background: #002e94;
+   }
+ 
+   .more1{
+     font-size: 20px;
+     margin-top: 20px;
+     padding: 10px 25  px 10px 25px;
+   }
