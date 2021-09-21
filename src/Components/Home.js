@@ -6,6 +6,7 @@ import axios from 'axios';
 import Footer from './Footer'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components'
+import './Btn.css'
 
 
 
@@ -76,7 +77,7 @@ function Home() {
             )}
             <Button>
             <div className="container d-flex justify-content-center align-itmes-center" >
-            <Link to="/page1"> <button type="button" className=" btn more1 ">See More</button></Link></div>
+            <Link to="/page1"> <button type="button" className=" btn more1 setbtn ">See More</button></Link></div>
             </Button>
             <Footer />
         </div>

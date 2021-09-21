@@ -32,8 +32,7 @@ const Container = styled.div`
     align-content: center;
     background: linear-gradient(180deg, rgba(151,242,243,1) 0%, rgba(132,206,209,1) 100%);
 
-    
-;
+
     justify-content: center;
 
     .title{

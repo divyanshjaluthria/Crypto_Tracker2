@@ -8,8 +8,8 @@ function Coin({ name, image, symbol, price, volume, rank, priceChange, marketCap
     return (
         <>
 
-            <div className="container1">
-                <div className="container datacol-s-1" >
+            <div className="container1 ">
+                <div className="container data " >
                     <table className="table">
                         <thead className="thead head">
                             <tr className="none">
@@ -28,7 +28,7 @@ function Coin({ name, image, symbol, price, volume, rank, priceChange, marketCap
                             </tr>
                         </thead>
                         <tbody>
-                            <tr >
+                            <tr className="col-2">
                                 <td><img src={image} className="img" alt="" /></td>
                                 <th scope="row" >{name}</th>
                                 <td >{rank}</td>
