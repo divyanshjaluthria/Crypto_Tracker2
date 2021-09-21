@@ -1,11 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
+import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import Facebook from '@mui/icons-material/Facebook';
-// import { Link } from 'react-router-dom';
-
 
 
 function Footer() {
@@ -18,7 +16,6 @@ function Footer() {
             <a href="instagram.com"><InstagramIcon className="ig"/></a>
             <a href="linkedin.com"><LinkedInIcon className="li"/></a></Social>
                 <p className="content">Content Designed & Created by Divyansh Jaluthria © 2021</p>
-            {/* <Link to="/aboutus"><a >About us</a></Link> */}
             </div>
         </Container>
     )
@@ -39,6 +36,7 @@ color: #064273;
 }
 
 `
+ const Facebook = styled(FacebookIcon)``
 
  const Social = styled.div`
     justify-content: center;

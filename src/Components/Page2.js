@@ -4,15 +4,17 @@ import Coin from './Coin';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom'
-import Details from './Details';
+import './Btn.css'
 
 
 
 
 function Page2() {
 
+    
     const [coin, setCoin] = useState([]);
-    useEffect(() => {
+     
+    useEffect (() => {
         axios.get(`https://api.coingecko.com/api/v3/coins/markets`, {
             params: {
                 vs_currency: "inr",
@@ -23,6 +25,10 @@ function Page2() {
             // console.log(res.data);
         }).catch(error => console.log(error))
     }, []);
+
+    
+    
+    
 
     const [search, setSearch] = useState('');
 const handleOnChange = e => {
@@ -37,7 +43,6 @@ const handleOnChange = e => {
     return (
         <>
         <Navbar handleOnChange={handleOnChange} />
-        <Details></Details>
             {filteredCoins.slice(0, 100).map(
                 coin => {
                     return (
@@ -55,9 +60,9 @@ const handleOnChange = e => {
                 }
             )}
                  <div className="container d-flex justify-content-center align-itmes-center">
- <Link to="/see_more"> <button type="button" className=" btn btn-primary more1 ">Page 1</button></Link>
- <Link to="/"> <button type="button" className=" btn btn-primary more1 ">Home</button></Link>
- <Link to="/page3"> <button type="button" className=" btn btn-primary more1 ">Page 3</button></Link></div>
+ <Link to="/page1"> <button type="button" className=" btn btn-primary more1 setbtn">Page 1</button></Link>
+ <Link to="/"> <button type="button" className=" btn btn-primary more1 setbtn">Home</button></Link>
+ <Link to="/page3"> <button type="button" className=" btn btn-primary more1 setbtn">Page 3</button></Link></div>
  
             <Footer/>
         </>

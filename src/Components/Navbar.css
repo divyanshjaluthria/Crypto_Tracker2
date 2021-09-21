@@ -8,3 +8,8 @@
 .navbar{
     margin-bottom: 20px;
 }
+
+.title :hover{
+    text-decoration: none;
+    
+}

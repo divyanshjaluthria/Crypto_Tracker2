@@ -3,13 +3,15 @@ import styled from 'styled-components';
 
 
 function Section(props) {
+
+    
     return (
         <>
-            <Container className="landing d-flex ">
-                <div className="btn btn-dark mode">Dark🌙</div>
-                <Content className=" content d-flex justify-content-center align-items-center flex-column">
-                    <h1 className="pe-none title">Crypto Tracker</h1>
-                    <p className="para">Crypto Tracker Will Make your lIfe Easier</p>
+            <Container className="landing d-flex " >
+                {/* <div className="btn btn-dark mode" >Dark🌙</div> */}
+                <Content className=" content d-flex justify-content-center align-items-center flex-column" >
+                    <h1 className="pe-none title"  >Crypto Tracker</h1>
+                    <p className="para" >Crypto Tracker Will Make your lIfe Easier</p>
                     <img src="./btc.png.png" className="image-fluid" alt="" />
                     <div className="more btn ">Explore More</div>
                 </Content>
@@ -29,14 +31,16 @@ const Container = styled.div`
     min-height: 90vh;
     align-content: center;
     background: linear-gradient(180deg, rgba(151,242,243,1) 0%, rgba(132,206,209,1) 100%);
+
+    
 ;
     justify-content: center;
 
     .title{
-        color: 	#064273;
+      color:  #064273;
     }
     .para{
-        color: 	#064273;
+        color:  #064273;
         font-weight: bold;
     }
     

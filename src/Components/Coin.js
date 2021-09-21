@@ -1,39 +1,59 @@
 import React from 'react'
 import './Coin.css'
 
+
 function Coin({ name, image, symbol, price, volume, rank, priceChange, marketCap }) {
+
+
     return (
         <>
-        <div className="contain">
-        <div className='coin-container d-flex justify-content-center ' >
-                <div className='coin-row row-ml  d-flex flex-row justify-items-start align-items-center'>
-                    <div className='coin  d-flex align-items-center'  >
-                        <img src={image} alt='crypto' className="coin-logo" />
 
-                        <h1 className="coin-name">{name}</h1>
-                        <p className='coin-symbol '>{symbol}</p>
+            <div className="container1">
+                <div className="container datacol-s-1" >
+                    <table className="table">
+                        <thead className="thead head">
+                            <tr className="none">
+                                <th scope="col"></th>
+                                <th scope="col" className="name" >Name</th>
+                                <th scope="col" className="rank" >rank</th>
+                                <th scope="col" className="symbol" >symbol</th>
+                                <th scope="col" className="price" >Price</th>
+                                <th scope="col" className="volume" >Volume</th>
+                                {priceChange < 0 ? (
+                                    <th className="text-danger loss" >Loss</th>
+                                )
+                                    : (<th className="text-success profit" >Profit</th>)}
 
-                    </div>
-                    <div className='coin-data d-flex align-items-center '>
-                        <p className="coin-rank ">Rank #{rank}</p>
-                        <p className="coin-price ">Price <br />Rs {price.toLocaleString()}</p>
-                        <p className='coin-volume '>Volume <br />Rs {volume.toLocaleString()}</p>
-                        {priceChange < 0 ? (
-                            <p className="coin-percent text-danger">Loss {priceChange.toFixed(2)}% </p>
-                        )
-                            : (<p className="coin-percent text-success">Profit {priceChange.toFixed(2)}%</p>)
-                        }
-                        <p className="coin-market-cap">Market Cap. {marketCap.toLocaleString()}</p>
-                    </div>
+                                <th scope="col" className="cap" >Market Cap</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr >
+                                <td><img src={image} className="img" alt="" /></td>
+                                <th scope="row" >{name}</th>
+                                <td >{rank}</td>
+                                <td className="symbol-data" >{symbol}</td>
+                                <td >{price.toLocaleString()}</td>
+                                <td >{volume.toLocaleString()}</td>
+
+                                {priceChange < 0 ? (
+                                    <td className="text-danger">{priceChange.toFixed(2)}%</td>
+                                )
+                                    : (<td className="text-success">{priceChange.toFixed(2)}%</td>)}
+                                <td >{marketCap.toLocaleString()}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <table className="table">
+                    </table>
                 </div>
-
             </div>
-            </div>
-            </>
+        </>
 
 
 
-            )
+    )
 }
 
-            export default Coin
+export default Coin

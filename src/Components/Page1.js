@@ -4,8 +4,7 @@ import Coin from './Coin';
 import Footer from './Footer';
 import Navbar from './Navbar';
 import { Link } from 'react-router-dom'
-import Details from './Details';
-
+import './Btn.css'
 
 
 
@@ -31,6 +30,7 @@ function Page1() {
 
     const filteredCoins = coin.filter(coin =>
         coin.name.toLowerCase().includes(search.toLowerCase())
+        
     )
 
 
@@ -38,7 +38,6 @@ function Page1() {
     return (
         <>
             <Navbar handleOnChange={handleOnChange} />
-            <Details></Details>
             {filteredCoins.slice(0, 100).map(
                 coin => {
                     return (
@@ -56,9 +55,9 @@ function Page1() {
                 }
             )}
             <div className="container d-flex justify-content-center align-itmes-center">
-                <Link to="/"> <button type="button" className=" btn btn-primary more1 ">Home</button></Link>
+                <Link to="/"> <button type="button" className=" btn btn-primary more1 setbtn">Home</button></Link>
 
-                <Link to="/page2"> <button type="button" className=" btn btn-primary more1 ">Page 2</button></Link>
+                <Link to="/page2"> <button type="button" className=" btn btn-primary more1 setbtn">Page 2</button></Link>
             </div>
             <Footer />
         </>
@@ -69,7 +68,6 @@ function Page1() {
 }
 
 export default Page1;
-
 
 
 

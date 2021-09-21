@@ -7,7 +7,8 @@
  }
  
  body{
-     font-family: 'Montserrat', sans-serif
+     font-family: 'Montserrat', sans-serif;
+     width: 100vw;  
  }
  
  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');  
@@ -39,3 +40,5 @@
      margin-top: 20px;
      padding: 10px 25  px 10px 25px;
    }
+
+   

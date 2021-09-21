@@ -11,6 +11,29 @@ import styled from 'styled-components'
 
 function Home() {
 
+    // const [myStyle, setMystyle]= useState({
+        // color: 'black',
+        // backgroundColor: 'white',
+        // 
+    // })
+    // console.log(myStyle)
+    // const toggleStyle = () =>{
+        // if(myStyle.color==='white'){
+            // setMystyle({
+                // color: 'black',
+                // backgroundColor: 'white'
+            // })
+            // 
+        // }
+        // else{
+            // setMystyle({
+                // color: 'white',
+                // backgroundColor: 'black'
+                // 
+            // })
+        // }
+    // }
+
     const [coin, setCoin] = useState([]);
 
     useEffect(() => {
@@ -32,7 +55,7 @@ function Home() {
     )
 
     return (
-        <div>
+        <div >
             <Section />
             {filteredCoins.slice(0, 10).map(
                 coin => {
@@ -46,12 +69,13 @@ function Home() {
                             price={coin.current_price}
                             rank={coin.market_cap_rank}
                             priceChange={coin.price_change_percentage_24h}
-                            marketCap={coin.market_cap} />
+                            marketCap={coin.market_cap} 
+                            />
                     )
                 }
             )}
             <Button>
-            <div className="container d-flex justify-content-center align-itmes-center">
+            <div className="container d-flex justify-content-center align-itmes-center" >
             <Link to="/page1"> <button type="button" className=" btn more1 ">See More</button></Link></div>
             </Button>
             <Footer />
